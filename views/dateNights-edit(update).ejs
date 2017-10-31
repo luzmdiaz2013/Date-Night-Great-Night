@@ -1,0 +1,30 @@
+<% include ./partials/boilerplate.ejs %>
+
+
+<div class="formContainer">
+    <form action="/dateNights/<%= dateNight.id%>?_method=PUT" method="POST">
+        <input type="date" name="date" placeholder="edit date" value ="<%= dateNight.date %>">
+        <br>
+        <br>
+        <input type="text" name="time" placeholder="edit time" value ="<%= dateNight.time %>">
+        <br>
+        <br>
+        <input type="text" name="location" placeholder="edit location" value ="<%= dateNight.location %>">
+        <br>
+        <br>
+        <input type="text" name="description" placeholder="edit description" value ="<%= dateNight.description %>">
+        <br>
+        <br>
+        <input type="text" name="url" placeholder="edit status" value ="<%= dateNight.url %>">
+        <br>
+        <br>
+        <input type="submit" value="Edit!" />
+        <br>
+    </form>
+</div>
+
+
+
+
+
+<% include ./partials/end.ejs %>

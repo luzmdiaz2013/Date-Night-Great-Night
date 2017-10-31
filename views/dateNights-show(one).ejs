@@ -1,0 +1,35 @@
+<% include ./partials/boilerplate.ejs %>
+
+
+<div class="dataContainer">
+
+  <h3 id="date"><%= dateNight.date %></h3>
+  <br>
+  <h3 id="time"><%= dateNight.time %></h3>
+  <br>
+  <h3 id="location"><%= dateNight.location %></h3>
+  <br>
+  <h3 id="description"><%= dateNight.description %></h3>
+  <br>
+  <h3 id="url"><%= dateNight.url %></h3>
+  <br>
+
+<a href="/dateNights/<%= dateNight.id%>/edit"><button type="submit">Edit</button></a>
+
+
+  <form class="delete" action="/dateNights/<%= dateNight.id%>?_method=DELETE" method="POST">
+        <input class="dellink" type="submit" value="Delete">
+  </form>
+</div>
+
+
+<a href="/toDo">Back to list </a>
+
+
+
+
+
+
+
+
+<% include ./partials/end.ejs %>
