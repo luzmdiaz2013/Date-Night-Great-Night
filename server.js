@@ -39,16 +39,7 @@ app.get('/', (req, res) => {
   });
 });
 
-// const authRoutes = require('./routes/auth-routes');
-// app.use('/auth', authRoutes);
-// const userRoutes = require('./routes/user-routes');
-// app.use('/user', userRoutes);
-// const todoRoutes = require('./routes/todo-routes');
-// app.use('/todos', todoRoutes);
 
-// app.use('*', (req, res) => {
-//   res.status(400).send('Not Found');
-// });
 
 const authRoutes = require('./routes/auth-routes');
 app.use('/auth', authRoutes);
