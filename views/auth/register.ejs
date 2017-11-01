@@ -1,0 +1,12 @@
+<% include ../partials/boilerplate %>
+
+<div class='auth-container'>
+<form method='POST' action='/auth/register.ejs'>
+  <input type="text" name="username" placeholder="username" required />
+  <input type="text" name="email" placeholder="email" required />
+  <input type="text" name="password_digest" placeholder="password" required />
+  <input type="submit" value='Log in!' />
+</form>
+</div>
+
+<% include ../partials/end %>

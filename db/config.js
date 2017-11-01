@@ -7,10 +7,10 @@ const options = {
 
 const pgp = require('pg-promise')(options);
 
-function setb() {
+function setDb() {
   if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
     return pgp({
-      database: 'datestable',
+      database: 'dates',
       port: 5432,
       host: 'localhost',
     });
@@ -19,6 +19,6 @@ function setb() {
   }
 }
 
-const db =setDb;
+const db =setDb();
 
 module.exports = db;

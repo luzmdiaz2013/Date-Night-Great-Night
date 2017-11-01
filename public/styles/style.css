@@ -1,0 +1,46 @@
+.dataContainer{
+height: 500px;
+width: 500px;
+background-color: blue;
+/*display: flex;*/
+}
+
+#date{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+}
+
+#time{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+
+}
+
+#location{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+
+}
+
+#description{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+
+}
+
+#url{
+  height: 50px;
+  width: 250px;
+  background-color: yellow;
+  /*justify-content: space-around;*/
+
+}
+
