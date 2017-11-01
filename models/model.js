@@ -50,6 +50,8 @@ DateNight.destroy = id => {
     [id]);
 };
 
+
+
 module.exports = DateNight;
 
 
