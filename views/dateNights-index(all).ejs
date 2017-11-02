@@ -3,20 +3,22 @@
 
 <div class="mainContainer">
 <% dateNights.forEach((dateNight) => { %>
-<div class="dataContainer">
-      <h1 class="date"> Date Night </h1>
-      <h1 class="great"> Great Night </h1>
-      <!-- <h1 class="light"> Light it up! </h1> -->
-  <h3 class="dataFields" id="date"><%= dateNight.date %></h3>
+
+<div class="pic2">
+  <h1 class="date"> Date Night </h1>
+  <h1 class="great"> Great Night </h1>
   <br>
-  <h3 class="dataFields" id="time"><%= dateNight.time %></h3>
-  <br>
-  <h3 class="dataFields" id="location"><%= dateNight.location %></h3>
-  <br>
-  <h3 class="dataFields" id="description"><%= dateNight.description %></h3>
-  <br>
-  <h3 class="dataFields" id="url"><%= dateNight.url %></h3>
-  <br>
+      <h3 class="dataFields" id="date"><%= dateNight.date %></h3>
+      <!-- <br> -->
+      <h3 class="dataFields" id="time"><%= dateNight.time %></h3>
+      <!-- <br> -->
+      <h3 class="dataFields" id="location"><%= dateNight.location %></h3>
+      <!-- <br> -->
+      <h3 class="dataFields" id="description"><%= dateNight.description %></h3>
+      <!-- <br> -->
+      <h3 class="dataFields" id="url"><%= dateNight.url %></h3>
+      <!-- <br> -->
+      <h1 class="light2"> Light it up! </h1>
   <br>
 
   <div class="logReg">
@@ -30,10 +32,10 @@
 
 </div>
 
+<% }) %>
+
 <a href="/dateNights/new"><button type="button" id="add" class="indexButtons">Create a Date!</button></a>
 <a href = '/auth/logout'><button class="indexButtons">Logout!</button></a>
-
-<% }) %>
 
 </div>
 

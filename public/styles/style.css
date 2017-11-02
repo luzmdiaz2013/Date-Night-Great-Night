@@ -14,6 +14,19 @@
   overflow: hidden;
 }
 
+.mainContainer2{
+  background-color: #212121;
+  height:100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One', cursive;
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: center;
+  overflow: hidden;
+}
+
 .pic{
   background-image: url('/images/dateNight3.jpg');
   background-size: cover;
@@ -33,6 +46,32 @@
 
 
 }
+.pic2{
+  background-image: url('/images/dateNight3.jpg');
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  width: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 50px;
+  padding-top: 15px;
+  box-shadow: 5px 5px 4px #020d16;
+  font-size: 30px;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d,
+                0 0 30px #fda65d,
+                0 0 40px #fda65d,
+                0 0 50px #fda65d;
+
+
+
+
+}
 .dataContainer{
   background-image: url('/images/dateNight3.jpg');
   background-size: cover;
@@ -47,19 +86,35 @@
   margin-top: 50px;
 }
 
-/*.formContainer{
-  background-image: url('/images/dateNight3.jpg');
-  background-size: cover;
-  position: relative;
-  height: 500px;
-  width: 350px;
+.formContainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px;
-  margin-top: 50px;
-}*/
+
+}
+
+.newForm{
+  margin: 5px;
+  margin-top: 20px;
+  background-color: transparent; /*#212121*/;
+  opacity: .5;
+  border-radius: 3px;
+  height: 35px;
+  width:300px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  border-style: none;
+  color: white;
+  text-shadow:  0 0 10px /*white*/ #fda65d,
+                0 0 20px /*white*/ #fda65d,
+                0 0 30px /*white*/ #fda65d,
+                0 0 40px /*white*/ #fda65d,
+                0 0 50px /*white*/ #fda65d;
+
+}
+
 .date{
 margin-right: 125px;
 }
@@ -72,11 +127,13 @@ margin-top: 30px;
 .light{
 margin-top: 200px;
 font-size: 60px;
-/*text-shadow:  0 0 10px white /*#fda65d*/,
-              0 0 20px white /*#fda65d*/,
-              0 0 30px white /*#fda65d*/,
-              0 0 40px white /*#fda65d*/,
-              0 0 50px white /*#fda65d*/;*/
+
+}
+
+.light2{
+margin-top: 40px;
+font-size: 55px;
+
 }
 
 .logReg{
@@ -111,11 +168,22 @@ font-size: 60px;
 }
 
 .dataFields{
-
+  background-color: white;
+  color: white;
+  border-radius: 3px;
+  height: 25px;
+  width:200px;
+  font-size: 16px;
+  justify-content: center;
+  border-style: none;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d,
+                0 0 30px #fda65d,
+                0 0 40px #fda65d,
+                0 0 50px #fda65d;
 }
 
 .createButtons{
-
   background-color: white;
   color: white;
   border-radius: 3px;
@@ -135,10 +203,10 @@ font-size: 60px;
 #date{
   height: 35px;
   width: 225px;
-  background-color: white;
-  color: #fda65d;
-  text-shadow:  0 0 10px blue,
-                0 0 20px blue;
+  background-color: transparent;
+  color: white;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d;
   overflow: scroll;
   font-size: 25px;
   /*justify-content: space-around;*/

@@ -1,26 +1,28 @@
 <% include ./partials/boilerplate.ejs %>
 
 
-<div class="formContainer">
+<div class="mainContainer2">
+    <div class="pic">
+      <h1 class="date"> Date Night </h1>
+      <h1 class="great"> Great Night </h1>
+      <center>
     <form action="/dateNights/<%= dateNight.id%>?_method=PUT" method="POST">
-        <input type="text" name="date" placeholder="edit date" value ="<%= dateNight.date %>">
-        <br>
-        <br>
-        <input type="text" name="time" placeholder="edit time" value ="<%= dateNight.time %>">
-        <br>
-        <br>
-        <input type="text" name="location" placeholder="edit location" value ="<%= dateNight.location %>">
-        <br>
-        <br>
-        <input type="text" name="description" placeholder="edit description" value ="<%= dateNight.description %>">
-        <br>
-        <br>
-        <input type="text" name="url" placeholder="edit status" value ="<%= dateNight.url %>">
-        <br>
-        <br>
-        <input type="submit" value="Edit!" />
+        <input class="newForm" type="text" name="date" placeholder="edit date" value ="<%= dateNight.date %>">
+
+        <input class="newForm" type="text" name="time" placeholder="edit time" value ="<%= dateNight.time %>">
+
+        <input class="newForm" type="text" name="location" placeholder="edit location" value ="<%= dateNight.location %>">
+
+        <input class="newForm" type="text" name="description" placeholder="edit description" value ="<%= dateNight.description %>">
+
+        <input class="newForm" type="text" name="url" placeholder="edit status" value ="<%= dateNight.url %>">
+
+        <input class="newForm" type="submit" value="Edit!" />
         <br>
     </form>
+
+    <h1 class="light2"> Light it up! </h1>
+    </center>
 </div>
 
 
