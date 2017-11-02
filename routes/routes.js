@@ -4,13 +4,15 @@ const express = require('express');
 const dateNightsRouter = express.Router();
 
 const dateNightsController = require('../controllers/controller.js');
+const authHelpers = require('../services/auth/auth-helpers');
+
 
 dateNightsRouter.get('/', dateNightsController.index); //Show all dateNights
 
 dateNightsRouter.get('/new', authHelpers.loginRequired, (req, res) => {
   res.render('dateNights-create(new).ejs');
 })
-dateNightsRouter.post('/', authHelpers.loginRequired, authHelpers.loginRequired, dateNightsController.create); //Create/Add a new dateNight
+dateNightsRouter.post('/',  dateNightsController.create); //Create/Add a new dateNight
 
 
 dateNightsRouter.get('/:id', dateNightsController.show); //Show one dateNight by id

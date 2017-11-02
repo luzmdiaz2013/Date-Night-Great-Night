@@ -5,6 +5,7 @@ const usersController = {};
 
 usersController.create = (req, res) => {
   const salt = bcrypt.genSaltSync();
+  console.log(req.body);
   const hash = bcrypt.hashSync(req.body.password, salt);
   User.create({
     username: req.body.username,
@@ -15,7 +16,7 @@ usersController.create = (req, res) => {
   }).then(user => {
     req.login(user, (err) => {
       if (err) return next(err);
-      res.redirect('/user');
+      res.redirect('/dateNights');
     });
   }).catch(err => {
     console.log(err);
@@ -24,7 +25,7 @@ usersController.create = (req, res) => {
 }
 
 usersController.index = (req, res) => {
-  res.json({
+  res.render({
     message: 'Put a user profile page on this route',
     data: {
       user: req.user,

@@ -14,6 +14,17 @@ const passport = require('passport');
 const app = express();
 require('dotenv').config();
 
+//bodyParser set up
+app.use(cookieParser());
+app.use(session({
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: true,
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+
 //method override
 app.use(methodOverride('_method'));
 
@@ -46,24 +57,17 @@ app.get('/', (req, res) => {
 const dateNightRoutes = require('./routes/routes.js');
 app.use('/dateNights', dateNightRoutes);
 
-//Error handler
-app.use('*', (req, res) => {
-  res.status(404).send('404 Not Found');
-});
-
 
 const authRoutes = require('./routes/auth-routes');
 app.use('/auth', authRoutes);
 const userRoutes = require('./routes/user-routes');
 app.use('/user', userRoutes);
 
-//bodyParser set up
-app.use(cookieParser());
-app.use(session({
-  secret: process.env.SECRET_KEY,
-  resave: false,
-  saveUninitialized: true,
-}));
-app.use(passport.initialize());
-app.use(passport.session());
+
+
+//Error handler
+app.use('*', (req, res) => {
+  res.status(404).send('404 Not Found');
+});
+
 

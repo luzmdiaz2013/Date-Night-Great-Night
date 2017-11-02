@@ -1,45 +1,197 @@
+/*body{
+  margin: 0 auto;
+}*/
+.mainContainer{
+  background-color: #212121;
+  height:100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.pic{
+  background-image: url('/images/dateNight3.jpg');
+  background-size: cover;
+  position: relative;
+  height: 700px;
+  width: 450px;
+  color: white;
+  padding-top: 30px;
+  box-shadow: 5px 5px 4px #020d16;
+  font-size: 55px;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d,
+                0 0 30px #fda65d,
+                0 0 40px #fda65d,
+                0 0 50px #fda65d;
+
+
+
+}
 .dataContainer{
-height: 500px;
-width: 500px;
-background-color: blue;
-/*display: flex;*/
+  background-image: url('/images/dateNight3.jpg');
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 50px;
+}
+
+/*.formContainer{
+  background-image: url('/images/dateNight3.jpg');
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 50px;
+}*/
+.date{
+margin-right: 125px;
+}
+
+.great{
+margin-left: 125px;
+margin-top: 30px;
+}
+
+.light{
+margin-top: 200px;
+font-size: 60px;
+/*text-shadow:  0 0 10px white /*#fda65d*/,
+              0 0 20px white /*#fda65d*/,
+              0 0 30px white /*#fda65d*/,
+              0 0 40px white /*#fda65d*/,
+              0 0 50px white /*#fda65d*/;*/
+}
+
+.logReg{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  font-size: 20px;
+  justify-content: center;
+  /*align-items: center;*/
+
+}
+
+.indexButtons{
+  background-color: transparent;
+  color: white;
+  border-radius: 3px;
+  height: 25px;
+  width:100px;
+  font-size: 20px;
+  text-align: center;
+  border-style: none;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d;
+}
+
+.indexButtons:hover{
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d,
+                0 0 30px #fda65d,
+                0 0 40px #fda65d,
+                0 0 50px #fda65d;
+}
+
+.dataFields{
+
+}
+
+.createButtons{
+
+  background-color: white;
+  color: white;
+  border-radius: 3px;
+  height: 25px;
+  width:200px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  border-style: none;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d,
+                0 0 30px #fda65d,
+                0 0 40px #fda65d,
+                0 0 50px #fda65d;
 }
 
 #date{
-  height: 50px;
-  width: 250px;
-  background-color: yellow;
+  height: 35px;
+  width: 225px;
+  background-color: white;
+  color: #fda65d;
+  text-shadow:  0 0 10px blue,
+                0 0 20px blue;
+  overflow: scroll;
+  font-size: 25px;
   /*justify-content: space-around;*/
 }
 
 #time{
-  height: 50px;
-  width: 250px;
-  background-color: yellow;
+  height: 35px;
+  width: 225px;
+  background-color: transparent;
+  color: white;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d;
+  overflow: scroll;
+  font-size: 25px;
   /*justify-content: space-around;*/
 
 }
 
 #location{
-  height: 50px;
-  width: 250px;
-  background-color: yellow;
+  height: 35px;
+  width: 225px;
+  background-color: transparent;
+  color: white;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d;
+  overflow: scroll;
+  font-size: 25px;
   /*justify-content: space-around;*/
 
 }
 
 #description{
-  height: 50px;
-  width: 250px;
-  background-color: yellow;
+  height: 35px;
+  width: 225px;
+  background-color: transparent;
+  color: white;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d;
+  overflow: scroll;
+  font-size: 25px;
   /*justify-content: space-around;*/
 
 }
 
 #url{
-  height: 50px;
-  width: 250px;
-  background-color: yellow;
+  height: 35px;
+  width: 225px;
+  background-color: transparent;
+  color: white;
+  text-shadow:  0 0 10px #fda65d,
+                0 0 20px #fda65d;
+  overflow: scroll;
+  font-size: 25px;
   /*justify-content: space-around;*/
 
 }
