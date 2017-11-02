@@ -1,17 +1,20 @@
 <% include ./partials/boilerplate.ejs %>
 
 
-<div class="dataContainer">
+<div class="mainContainer2">
+<div class="pic">
+      <h1 class="date"> Date Night </h1>
+      <h1 class="great"> Great Night </h1>
 
-  <h3 id="date"><%= dateNight.date %></h3>
+  <h3 class="dataFields" id="date"><%= dateNight.date %></h3>
   <br>
-  <h3 id="time"><%= dateNight.time %></h3>
+  <h3 class="dataFields" id="time"><%= dateNight.time %></h3>
   <br>
-  <h3 id="location"><%= dateNight.location %></h3>
+  <h3 class="dataFields" id="location"><%= dateNight.location %></h3>
   <br>
-  <h3 id="description"><%= dateNight.description %></h3>
+  <h3 class="dataFields" id="description"><%= dateNight.description %></h3>
   <br>
-  <h3 id="url"><%= dateNight.url %></h3>
+  <h3 class="dataFields" id="url"><%= dateNight.url %></h3>
   <br>
 
 <a href="/dateNights/<%= dateNight.id%>/edit"><button type="submit">Edit</button></a>
@@ -20,6 +23,7 @@
   <form class="delete" action="/dateNights/<%= dateNight.id%>?_method=DELETE" method="POST">
         <input class="dellink" type="submit" value="Delete">
   </form>
+  <h1 class="light2"> Light it up! </h1>
 </div>
 
 
